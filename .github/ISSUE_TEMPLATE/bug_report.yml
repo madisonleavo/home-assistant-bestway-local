@@ -1,0 +1,33 @@
+name: Device or integration issue
+description: Report reproducible behavior without credentials or private device identifiers.
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This is an experimental, largely AI-assisted community integration.
+        Do not paste Wi-Fi passwords, local passcodes, MAC/device IDs, or unredacted backups.
+        Model support is keyed by the product key, not just the marketing name.
+  - type: input
+    id: versions
+    attributes:
+      label: Home Assistant and integration versions
+    validations:
+      required: true
+  - type: input
+    id: product
+    attributes:
+      label: Product key and firmware/model version
+      description: Product keys identify model families and are not individual device IDs.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Expected behavior, actual behavior and reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Reviewed/redacted diagnostics or logs
+      description: Please inspect the content before posting it.

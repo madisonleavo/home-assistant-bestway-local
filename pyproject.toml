@@ -1,0 +1,23 @@
+[project]
+name = "bestway-spa-local"
+version = "0.1.0"
+description = "Local Home Assistant integration for confirmed Bestway Gizwits spa profiles"
+requires-python = ">=3.14.2"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra --strict-markers --timeout=30"
+
+[tool.ruff]
+target-version = "py314"
+line-length = 100
+
+[tool.ruff.per-file-target-version]
+"tools/recover_wifi.py" = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+ignore = ["E501"]

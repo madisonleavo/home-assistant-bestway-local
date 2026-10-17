@@ -1,0 +1,89 @@
+{
+  "retrieved": "2026-10-17",
+  "devices": [
+    {
+      "product_key": "8bc1c03fc3d64204b9925591664b5c20",
+      "name": "泳池过滤器",
+      "hotspot_prefix": "BW-Flowclear-",
+      "onboarding": [
+        "SOFT_AP"
+      ],
+      "datapoint_count": 5,
+      "writable_count": 2,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=8bc1c03fc3d64204b9925591664b5c20",
+      "support": "research candidate only; not enabled"
+    },
+    {
+      "product_key": "99763dc38ea64178a71b509efbbb17ed",
+      "name": "内置泵充气床垫",
+      "hotspot_prefix": "BW-AirBed-",
+      "onboarding": [
+        "SOFT_AP"
+      ],
+      "datapoint_count": 8,
+      "writable_count": 3,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=99763dc38ea64178a71b509efbbb17ed",
+      "support": "research candidate only; not enabled"
+    },
+    {
+      "product_key": "fbc861733103419b9c2a09c71584cfe5",
+      "name": "Airjet",
+      "hotspot_prefix": "BW-LayZspa-",
+      "onboarding": [
+        "SOFT_AP"
+      ],
+      "datapoint_count": 25,
+      "writable_count": 14,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=fbc861733103419b9c2a09c71584cfe5",
+      "support": "research candidate only; not enabled"
+    },
+    {
+      "product_key": "095d319378614b7d81663c812f207288",
+      "name": "Hydrojet",
+      "hotspot_prefix": "BW-Hydrojet-",
+      "onboarding": [
+        "BT_WIFI"
+      ],
+      "datapoint_count": 63,
+      "writable_count": 29,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=095d319378614b7d81663c812f207288",
+      "support": "research candidate only; not enabled"
+    },
+    {
+      "product_key": "3d718ac2d47f45778e591614ced793da",
+      "name": "Hydrojet_Pro",
+      "hotspot_prefix": "BW-HydroPro-",
+      "onboarding": [
+        "BT_WIFI"
+      ],
+      "datapoint_count": 63,
+      "writable_count": 29,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=3d718ac2d47f45778e591614ced793da",
+      "support": "research candidate only; not enabled"
+    },
+    {
+      "product_key": "d3ac9226d983470284b5d133cf4fd6b4",
+      "name": "Airjet_V01",
+      "hotspot_prefix": "BW-Airjet-V01-",
+      "onboarding": [
+        "BT_WIFI"
+      ],
+      "datapoint_count": 63,
+      "writable_count": 29,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=d3ac9226d983470284b5d133cf4fd6b4",
+      "support": "confirmed discovery/login/status; control writes pending"
+    },
+    {
+      "product_key": "ddb34fb0df8d4f75b3633d5277f82bb1",
+      "name": "UltraFit",
+      "hotspot_prefix": "BW-UltraFit-",
+      "onboarding": [
+        "BT_WIFI"
+      ],
+      "datapoint_count": 63,
+      "writable_count": 29,
+      "source": "https://usapi.gizwits.com/app/datapoint?product_key=ddb34fb0df8d4f75b3633d5277f82bb1",
+      "support": "research candidate only; not enabled"
+    }
+  ]
+}

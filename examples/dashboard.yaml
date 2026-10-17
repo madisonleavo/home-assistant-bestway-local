@@ -1,0 +1,24 @@
+# Replace the example entity IDs with the entities created for your device name.
+# Standard HA cards only. Paste into a manual dashboard view/card configuration.
+type: vertical-stack
+cards:
+  - type: thermostat
+    entity: climate.milan
+    name: Spa
+  - type: entities
+    entities:
+      - switch.milan_power
+      - switch.milan_heater
+      - switch.milan_filter
+      - select.milan_bubbles
+      - switch.milan_panel_lock
+      - sensor.milan_water_temperature
+      - sensor.milan_heater_state
+      - sensor.milan_filter_state
+      - binary_sensor.milan_target_reached
+      - binary_sensor.milan_fault
+  - type: history-graph
+    hours_to_show: 24
+    entities:
+      - sensor.milan_water_temperature
+      - sensor.milan_target_temperature

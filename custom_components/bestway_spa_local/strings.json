@@ -1,0 +1,50 @@
+{
+  "title": "Bestway Spa",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect a local Bestway spa",
+        "description": "Enter the spa’s home-network IPv4 address or hostname. The spa must already be on Wi-Fi; no Bestway account is needed. Only confirmed AirJet V01 profiles are enabled.",
+        "data": {
+          "host": "Spa host",
+          "name": "Device name"
+        }
+      },
+      "reconfigure": {
+        "title": "Update the spa address",
+        "description": "The new address must identify the same physical spa. Wi-Fi recovery requires joining its hotspot using the recovery helper.",
+        "data": {
+          "host": "Spa host",
+          "name": "Device name"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach or read the spa. Check that it is on the same reachable network, then try again. If it is in AP mode, use the Wi-Fi recovery guide.",
+      "authentication_failed": "Local login is unavailable. A physical binding window or the previously saved local passcode may be required. Do not reset Wi-Fi just to retry login.",
+      "unsupported_device": "This device’s product key is not supported. See the compatibility and extension guide.",
+      "invalid_host": "Enter an IPv4 address or hostname, without a URL, spaces or port."
+    },
+    "abort": {
+      "already_configured": "This spa is already configured. Use Reconfigure to change its address.",
+      "unique_id_mismatch": "This address belongs to a different spa."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Polling",
+        "description": "Read state every 15 seconds by default. Failed reads back off up to five minutes. Heartbeats maintain the connection separately.",
+        "data": {
+          "poll_interval": "Poll interval (seconds)"
+        }
+      }
+    }
+  },
+  "issues": {
+    "spa_unreachable": {
+      "title": "Bestway spa is unavailable",
+      "description": "{name} has stopped responding on its home network. Check power, Wi-Fi signal and its DHCP address. If the pump exposes its setup hotspot, follow the standalone Wi-Fi recovery guide from a phone joined to that hotspot. Home Assistant cannot send provisioning packets to an AP it cannot reach."
+    }
+  }
+}

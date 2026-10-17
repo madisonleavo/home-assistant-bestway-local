@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local research and integration build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+.venv/
+dist/
+*.egg-info/
+/analysis/
+/artifacts/
+/references/
+/tools/ha-venv/
+/tools/uv-cache/
+/tools/uv-python/
+*.apk
+*.pcap
+*.pcapng
+.env
+.storage/

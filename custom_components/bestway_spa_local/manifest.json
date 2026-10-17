@@ -1,0 +1,14 @@
+{
+  "domain": "bestway_spa_local",
+  "name": "Bestway Spa",
+  "codeowners": [
+    "@madisonleavo"
+  ],
+  "config_flow": true,
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "0.1.0",
+  "documentation": "https://github.com/madisonleavo/home-assistant-bestway-local",
+  "issue_tracker": "https://github.com/madisonleavo/home-assistant-bestway-local/issues"
+}
