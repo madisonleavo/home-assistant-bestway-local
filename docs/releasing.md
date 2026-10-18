@@ -1,8 +1,9 @@
 # Release and rollback checklist
 
-Version 0.1.0 is experimental and unpublished. The GitHub repository exists;
-source publication, HACS default inclusion, HA OS installation and physical
-control validation are distinct steps.
+Version 0.1.0 is experimental. Source on the GitHub default branch can be installed
+through a HACS custom repository without a tagged release. HACS default-catalog
+inclusion, HA OS installation and physical control validation are distinct steps;
+the latter two still require owner validation.
 
 1. Review changes, credits, MIT notices and AI provenance. A named human owns
    release decisions; independent AI review is documented as AI review.

@@ -76,12 +76,16 @@ radio signal or prevent AP fallback.
 
 ### HACS custom repository
 
-When a reviewed version has been pushed to
-`madisonleavo/home-assistant-bestway-local`, add that repository URL in HACS as an
-**Integration**, download it, restart HA, and follow the same setup flow. Merely
-preparing these files does not publish the integration or place it in HACS's
-default catalog. Repository creation alone does not make the integration code
-available there.
+1. In HACS, open **⋮ → Custom repositories**.
+2. Add `https://github.com/madisonleavo/home-assistant-bestway-local` with type
+   **Integration**.
+3. Find **Bestway Spa Local**, download it, and restart Home Assistant.
+4. Go to **Settings → Devices & services → Add integration → Bestway Spa** and
+   enter the spa's home-network address.
+
+Until a tagged release is published, HACS downloads the repository's default
+branch. This is a custom-repository installation; the project is not listed in
+HACS's default catalog. Initial setup reads state without operating the pump.
 
 ## Entities and operation
 
