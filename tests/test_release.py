@@ -24,6 +24,8 @@ def test_runtime_archive_is_deterministic_and_contains_no_research(tmp_path):
         names = z.namelist()
         assert "custom_components/bestway_spa_local/manifest.json" in names
         assert "LICENSE" in names
+        assert "docs/provenance.md" in names
+        assert "docs/publication-audit.md" in names
         assert not any(x.startswith(("analysis/", "references/", "tests/", ".git/")) for x in names)
         assert not any(x.endswith((".apk", ".so", ".pyc")) or "__pycache__" in x for x in names)
         manifest = json.loads(z.read("custom_components/bestway_spa_local/manifest.json"))

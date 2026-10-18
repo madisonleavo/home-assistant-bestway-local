@@ -20,6 +20,14 @@ requirements and ran the initial network tests against their own spa. AI review
 is not independent human expert review, and passing tests are not a promise of
 hardware compatibility.
 
+The investigation included reading decompiled app/native output; this was **not
+a formal clean-room process**. Ghidra was instrumental in confirming the native
+Wi-Fi provisioning packet. The APK came from a third-party mirror, with the
+resulting authenticity and acquisition-rights limitations recorded rather than
+treated as resolved. See the [research provenance and legal considerations](docs/provenance.md)
+and [publication audit](docs/publication-audit.md) for the artifact hash, methods,
+source relationships, history checks and remaining uncertainties.
+
 This work sits alongside existing community efforts. It does not claim to be
 the original Bestway integration, an official Bestway product, or a replacement
 for anyone's passion project. Please use whichever project fits your equipment;
@@ -38,7 +46,7 @@ the reusable protocol findings and tests here are intended to be helpful.
 - [REA](https://github.com/morluto/rea), JADX and Ghidra: tools used in the initial
   investigation of the shipped app.
 
-This is a separate implementation informed by those sources and our device
+This is a separate Python implementation informed by those sources and our device
 observations. The distribution contains no APKs, decompiled proprietary app
 code, copied upstream repositories, research bundles, Wi-Fi passwords or device
 passcodes. Credits describe research context and are not endorsements by the

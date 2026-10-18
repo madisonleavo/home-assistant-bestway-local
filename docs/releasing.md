@@ -6,6 +6,9 @@ control validation are distinct steps.
 
 1. Review changes, credits, MIT notices and AI provenance. A named human owns
    release decisions; independent AI review is documented as AI review.
+   Recheck [provenance](provenance.md) and the [publication audit](publication-audit.md),
+   including unresolved acquisition/terms questions. Neither an AI audit nor MIT
+   is legal clearance. Check historical blobs as well as the current file list.
 2. Run the pinned development test environment and Ruff. Check no task/timer
    cleanup failures or unexpected network calls are suppressed. Keep CI results.
 3. Record exact live device product/firmware and which operations were verified.

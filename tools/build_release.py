@@ -56,7 +56,8 @@ def build_archives(root: Path, output: Path) -> dict[str, Path]:
     runtime = [
         path
         for path in source
-        if path.relative_to(root).as_posix() in {"LICENSE", "README.md"}
+        if path.relative_to(root).as_posix()
+        in {"LICENSE", "README.md", "docs/provenance.md", "docs/publication-audit.md"}
         or path.relative_to(root).parts[:2] == ("custom_components", DOMAIN)
     ]
     result = {

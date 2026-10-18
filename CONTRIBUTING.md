@@ -20,6 +20,14 @@ relax the supported-product guard. Keep changes reusable by existing community
 projects. A public API description may be more useful than another fork. Check
 upstream licensing before copying source, and retain required notices.
 
+Record sources, revisions, tool use and AI assistance honestly; see
+[research provenance](docs/provenance.md). Do not call a change clean-room if its
+authors/agents read decompiled or upstream implementation code. Publicly visible
+code without a license is not permission to copy it. Never submit APKs,
+decompiler output or vendor graphics as original MIT material. Describe any
+adapted source and preserve its required license/copyright notices; attribution
+alone does not authorize reuse. Use only devices/accounts you own or may access.
+
 Contribution does not imply a promise of support for all Bestway products. No
 automated CI job may operate real heating equipment. Physical validation is an
 explicit human-run test with results recorded separately from software tests.
